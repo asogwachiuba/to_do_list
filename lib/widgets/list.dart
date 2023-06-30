@@ -34,7 +34,7 @@ class List extends StatelessWidget {
                     ),
                     Text(
                       'No tasks added yet...',
-                      style: Theme.of(context).textTheme.title,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ],
                 ),

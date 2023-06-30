@@ -111,7 +111,7 @@ class _AddNewTaskState extends State<AddNewTask> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('Title', style: Theme.of(context).textTheme.subtitle),
+            Text('Title', style: Theme.of(context).textTheme.displaySmall),
             TextFormField(
               initialValue:
                   _inputDescription == null ? null : _inputDescription,
@@ -131,7 +131,7 @@ class _AddNewTaskState extends State<AddNewTask> {
             SizedBox(
               height: 20,
             ),
-            Text('Due date', style: Theme.of(context).textTheme.subtitle),
+            Text('Due date', style: Theme.of(context).textTheme.displaySmall),
             TextFormField(
               onTap: () {
                 _pickUserDueDate();
@@ -146,7 +146,7 @@ class _AddNewTaskState extends State<AddNewTask> {
             SizedBox(
               height: 20,
             ),
-            Text('Due time', style: Theme.of(context).textTheme.subtitle),
+            Text('Due time', style: Theme.of(context).textTheme.displaySmall),
             TextFormField(
               onTap: () {
                 _pickUserDueTime();
@@ -160,7 +160,7 @@ class _AddNewTaskState extends State<AddNewTask> {
             ),
             Container(
               alignment: Alignment.bottomRight,
-              child: FlatButton(
+              child: MaterialButton(
                 child: Text(
                   !widget.isEditMode ? 'ADD TASK' : 'EDIT TASK',
                   style: TextStyle(

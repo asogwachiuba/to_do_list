@@ -18,13 +18,13 @@ class ToDoListApp extends StatelessWidget {
           accentColor: Colors.yellow[700],
           fontFamily: 'Lato',
           textTheme: ThemeData.light().textTheme.copyWith(
-                title: TextStyle(
+                titleMedium: TextStyle(
                   color: Colors.purple,
                   fontFamily: 'Lato',
                   fontWeight: FontWeight.bold,
                   fontSize: 28,
                 ),
-                subtitle: TextStyle(
+                displaySmall: TextStyle(
                   color: Colors.purple,
                   fontFamily: 'Lato',
                   fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class ToDoListApp extends StatelessWidget {
               ),
           appBarTheme: AppBarTheme(
             textTheme: ThemeData.light().textTheme.copyWith(
-                  title: TextStyle(
+                  titleMedium: TextStyle(
                     color: Colors.white,
                     fontFamily: 'Lato',
                     fontSize: 22,
